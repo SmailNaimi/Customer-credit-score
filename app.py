@@ -6,10 +6,9 @@ import os
 import matplotlib.pyplot as plt
 
 # Charger les modèles sauvegardés
-model_folder = "C:\\Users\\PARAV\\OneDrive\\Escritorio\\DL_classification_RLOGISTIC_KNN"
-log_model = joblib.load(os.path.join(model_folder, 'model.pkl'))
-knn_model = joblib.load(os.path.join(model_folder, 'knn_model.pkl'))
-scaler = joblib.load(os.path.join(model_folder, 'scaler.pkl'))
+log_model = joblib.load(os.path.join('model.pkl'))
+knn_model = joblib.load(os.path.join('knn_model.pkl'))
+scaler = joblib.load(os.path.join('scaler.pkl'))
 
 # Variables utilisées
 features = ['Age', 'Marital', 'Expenses', 'Income', 'Amount', 'Price']
